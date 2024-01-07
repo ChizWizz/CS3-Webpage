@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Silent Vent Companion</title>
+    <link rel="stylesheet" type="text/css" href="../css/styless.css">
+</head>
+<body>
+    <div>
+        <img class="logo" src="../images/weblogo.png" alt="Logo">
+        <h1><span class="highlight">S</span>ilent <span class="highlight">V</span>ent <span class="highlight">C</span>ompanion</h1>
+    </div>
+
+    <div class="text-box">
+        <p>You can support us through donations or by spreading the word about SVC among your peers. Every little bit counts and helps us in our mission to create a nurturing space for students to express their emotions without fear of judgment.</p>
+        <p>Thank you for considering supporting SVC. Together, let's foster a community where every voice matters.</p>
+    </div>
+
+    <div>
+        <button id="returnButton">Return to Home</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const returnButton = document.getElementById('returnButton');;
+
+            returnButton.addEventListener('click', function() {
+                window.location.href = '../index.html'; 
+            });
+        });
+    </script>
+
+
+</body>
+</html>

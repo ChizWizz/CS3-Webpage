@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Silent Vent Companion</title>
+    <link rel="stylesheet" type="text/css" href="../css/style4.css">
+</head>
+<body>
+    <div>
+        <img class="logo" src="../images/weblogo.png" alt="Logo">
+        <h1><span class="highlight">S</span>ilent <span class="highlight">V</span>ent <span class="highlight">C</span>ompanion</h1>
+    </div>
+
+    <div>
+        <h2 class="outlined-text">Definition of Vent</h2>
+    </div>
+
+    <div class="video-container">
+        <video autoplay muted playsinline controls>
+            <source src="../mmfiles/Vent _ Meaning of vent.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button id="nextButton">Next</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const nextButton = document.getElementById('nextButton');;
+
+            nextButton.addEventListener('click', function() {
+                window.location.href = '../htdocs/subpage5.html'; 
+            
+            });
+        });
+    </script>
+
+
+</body>
+</html>

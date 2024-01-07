@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Silent Vent Companion</title>
+    <link rel="stylesheet" type="text/css" href="../css/fb2.css">
+</head>
+<body>
+    <div>
+        <img class="logo" src="../images/weblogo.png" alt="Logo">
+        <h1><span class="highlight">S</span>ilent <span class="highlight">V</span>ent <span class="highlight">C</span>ompanion</h1>
+    </div>
+
+    <div class="text-box">
+        <p>We value your insights! Your feedback helps us enhance your experience on SVC. Your input guides us in improving our services and creating a better space for everyone. Thank you for being a part of our community and contributing to its growth!</p>
+    </div>
+
+    <div>
+        <button id="returnButton">Return to Home</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const returnButton = document.getElementById('returnButton');;
+
+            returnButton.addEventListener('click', function() {
+                window.location.href = '../index.html'; 
+            });
+        });
+    </script>
+
+
+</body>
+</html>

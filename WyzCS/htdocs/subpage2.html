@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Silent Vent Companion</title>
+    <link rel="stylesheet" type="text/css" href="../css/style2.css">
+</head>
+<body>
+    <div>
+        <img class="logo" src="../images/weblogo.png" alt="Logo">
+        <h1><span class="highlight">S</span>ilent <span class="highlight">V</span>ent <span class="highlight">C</span>ompanion</h1>
+
+        <div class="textarea-container">
+            <textarea class="textarea" placeholder="Rant here..."></textarea>
+            <div>
+                <button id="sendButton">Send</button>
+                <button id="returnButton">Return to Home</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="new-box hidden">
+        <p>It's valid to feel this way. Your emotions matter. Rest assured that your rants are kept safe here.</p>
+        <div class="subtext">
+            <p>Would you like to anonymously share your rant and receive comforting words from an anonymous person?</p>
+        </div>
+        <div class="button-container">
+            <button id="yesButton">Yes</button>
+            <button id="returnButton2">No</button>
+        </div>
+    </div>
+
+    <div class="new-box2 hidden">
+        <p>Thank you for sharing!</p>
+        <button id="returnButton3">Return to Home</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const textarea = document.querySelector('.textarea');
+            const sendButton = document.getElementById('sendButton');
+            const savedName = localStorage.getItem('savedName');
+            const newBox = document.querySelector('.new-box');
+            const returnButton = document.getElementById('returnButton');
+            const buttonContainer = document.querySelector('.button-container');
+            const subtext = document.querySelector('.subtext');
+            const returnButton2 = document.getElementById('returnButton2');
+            const returnButton3 = document.getElementById('returnButton3');
+            const yes = document.getElementById('yesButton')
+            const newBox2 = document.querySelector('.new-box2');
+
+            sendButton.disabled = true; 
+
+            textarea.addEventListener('input', function() {
+                sendButton.disabled = textarea.value.trim() === ''; 
+            });
+
+            sendButton.addEventListener('click', function() {
+                if (textarea.value.trim() !== '') {
+                    document.querySelector('.textarea-container').style.display = 'none'; 
+                    newBox.style.display = 'block'; 
+                    buttonContainer.style.display = 'block';
+                    subtext.style.display = 'block';
+                }
+            });
+
+            if (savedName) {
+                textarea.placeholder = `Hi ${savedName}! You can rant here...`;
+            }
+
+            yes.addEventListener('click', function() {
+                document.querySelector('.new-box').style.display = 'none';
+                newBox2.style.display = 'block';
+                returnButton3.style.display = 'block';
+            });
+
+            returnButton.addEventListener('click', function() {
+                window.location.href = '../index.html';
+            });
+
+            returnButton2.addEventListener('click', function() {
+                window.location.href = '../index.html';
+            });
+
+            returnButton3.addEventListener('click', function() {
+                window.location.href = '../index.html';
+            });
+        });
+    </script>
+
+</body>
+</html>

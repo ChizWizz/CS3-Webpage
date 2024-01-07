@@ -1,0 +1,121 @@
+body {
+    background-image: url('../images/bg2.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: arial black, sans-serif;
+}
+
+.content {
+    height: 100%;
+    display: flex;
+}
+
+.logo {
+    max-width: 70px; 
+    max-height: 70px;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    display: inline-flex;
+}
+
+h1 {
+    font-size: 25px;
+    color: aliceblue;
+    text-align: left; 
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.highlight {
+    color: rgb(93, 157, 235);
+    text-shadow: 0 0 3px rgb(213, 251, 255), 0 0 8px rgb(29, 183, 255);
+}
+
+.textarea-container1 {
+    position: relative;
+    transform: translateX(50%);
+    width: 80%;
+    height: 18px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 100px;
+    left: 155px;
+    display: flex;
+    display: inline-block;
+    position: relative;
+}
+
+.textarea-container2 {
+    position: relative;
+    width: 100%;
+    height: 18px;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    display: flex;
+    display: inline-block;
+    position: relative;
+    margin-top: 40px;
+}
+
+.textarea {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none; 
+    outline: none;
+    display: block;
+    margin: 0 auto;
+}
+
+#nextButton {
+    padding: 10px 20px;
+    background-color: rgb(100, 172, 255);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-flex;
+    margin-top: 40px;
+    align-items: right;
+    font-weight: 600;
+}
+
+#nextButton:hover {
+    background-color: #56799e;
+}
+
+#returnButton {
+    padding: 10px 20px;
+    background-color: rgb(87, 123, 255);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-flex;
+    margin-top: 40px;
+    align-items: right;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+#returnButton:hover {
+    background-color: #0056b3;
+}

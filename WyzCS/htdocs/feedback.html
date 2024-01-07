@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Silent Vent Companion</title>
+    <link rel="stylesheet" type="text/css" href="../css/stylefb.css">
+</head>
+<body>
+    <div>
+        <img class="logo" src="../images/weblogo.png" alt="Logo">
+        <h1><span class="highlight">S</span>ilent <span class="highlight">V</span>ent <span class="highlight">C</span>ompanion</h1>
+    </div>
+
+    <div class="text-box">
+        <p>Share your thoughts, suggestions, or any issues you encountered while using our platform.</p>
+    </div>
+
+    <div class="textarea-container">
+        <textarea class="textarea" placeholder="Feedback here..."></textarea>
+        <div>
+            <button id="sendButton">Send</button>
+            <button id="returnButton">Return to Home</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sendButton = document.getElementById('sendButton');;
+            const returnButton = document.getElementById('returnButton');;
+
+            sendButton.addEventListener('click', function() {
+                window.location.href = '../htdocs/feedback2.html'; 
+            });
+
+            returnButton.addEventListener('click', function() {
+                window.location.href = '../index.html'; 
+            });
+        });
+    </script>
+
+
+</body>
+</html>
