@@ -21,6 +21,9 @@
             <div>
                 <button id="sendButton">Send</button>
             </div>
+            <div>
+                <button id="reportButton">Report this Rant</button>
+            </div>
         </div>
         
     </div>
@@ -36,6 +39,7 @@
             const sendButton = document.getElementById('sendButton');
             const newBox = document.querySelector('.new-box');
             const newBox2 = document.querySelector('.new-box2');
+            const newBox3 = document.querySelector('.new-box3');
 
             sendButton.disabled = true; 
 
@@ -48,6 +52,14 @@
                     document.querySelector('.textarea-container').style.display = 'none'; 
                     newBox.style.display = 'none'; 
                     newBox2.style.display = 'block'; 
+                }
+            });
+
+            reportButton.addEventListener('click', function() {
+                if (textarea.value.trim() !== '') {
+                    document.querySelector('.textarea-container').style.display = 'none'; 
+                    newBox2.style.display = 'none'; 
+                    newBox3.style.display = 'block'; 
                 }
             });
 
