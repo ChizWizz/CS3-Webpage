@@ -147,6 +147,45 @@ h1 {
     font-size: 28px;
 }
 
+.new-box3 {
+    max-width: 800px;
+    height: 420px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.new-box3 p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+}
+
+#reportButton {
+    padding: 10px 20px;
+    background-color: rgb(100, 172, 255);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-flex;
+    margin-top: 40px;
+    align-items: right;
+    left: 20px;
+    font-weight: 600;
+}
+
+#reportButton:hover {
+    background-color: #56799e;
+}
+
+
 #returnButton3 {
     position: absolute;
     bottom: 20px; 
